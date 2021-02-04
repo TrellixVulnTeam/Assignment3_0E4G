@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0"/>
     <link rel="shortcut icon" href="./svg/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/introduce.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <title>Giới thiệu - Assignment 3</title>
 </head>
 <body>
@@ -29,8 +30,8 @@
     </nav>
     
     <section class="content">
-        <h1 id="header">SƠ LƯỢC VỀ BILL GATES</h1>
-        <div class="detail">
+        <h1 id="header" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">SƠ LƯỢC VỀ BILL GATES</h1>
+        <div class="detail" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
             <p class="title">*Giai đoạn trước khi sáng lập Microsoft</p>
             <div class="about">
                 <ul>
@@ -94,7 +95,7 @@
             </div>
         </div>
 
-        <div class="detail">
+        <div class="detail" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
             <p class="title">*Giai đoạn đồng sáng lập Microsoft về sau</p>
             <p class="subtitle">1. BASIC</p>
             <div class="about">
@@ -188,7 +189,7 @@
             </div>
         </div>
 
-        <div class="detail">
+        <div class="detail" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
             <p class="title">*Sự công nhận của thế giới dành cho Bill Gates:</p>
             <div class="about">
                 <ul>
@@ -213,6 +214,11 @@
         </div>
     </section>
 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./javascript/app.js"></script>
 </body>
 </html>
