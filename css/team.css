@@ -40,8 +40,7 @@ nav {
         width: 25px;
         fill: currentColor;
         color: #0400ff;
-        cursor: pointer;
-        opacity: 0; }
+        cursor: pointer; }
   nav .empty {
     width: 10%; }
   nav .wrap_link {
