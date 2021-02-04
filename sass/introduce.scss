@@ -1,0 +1,217 @@
+@import url(../css/font.css);
+
+$my-white: rgb(240, 240, 240);
+$my-blue: rgb(4, 0, 255);
+$my-purple: rgb(140, 0, 255);
+$my-black: rgb(43, 43, 43);
+$my-light-black: rgb(70, 70, 70);
+$my-gold: rgb(250, 255, 0);
+$empty-width: 10%;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Latex_R;
+    transition: 0.3s ease-in-out;
+}
+
+*::selection{
+    background-color: $my-gold;
+}
+
+nav{
+    position: fixed;
+    padding: 10px 0px;
+    width: 100%;
+    height: fit-content;
+    background-color: $my-white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .logo_burger{
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        .wrap_logo{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            #logo{
+                width: 150px;
+            }
+        }
+
+        .wrap_burger{
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            #burger{
+                width: 25px;
+                fill: currentColor;
+                color: $my-blue;
+                cursor: pointer;
+                opacity: 0;
+            }
+        }
+    }
+
+    .empty{
+        width:  $empty-width;
+    }
+    .wrap_link{
+        width: 75%-$empty-width;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        a{
+            padding: 3px 9px;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            color: $my-blue;
+            border-radius: 6px;
+
+            &:nth-child(2){
+                background-color: $my-purple;
+                color: $my-white;
+                &:hover{
+                    background-color: $my-blue;
+                    color: $my-white;
+                }
+            }
+
+            &:hover{
+                color: $my-white;
+                background-color: $my-blue;
+                border-radius: 6px;
+            }
+        }
+    }   
+}
+
+.content{
+    width: 70%;
+    height: fit-content;
+    padding: 100px 0px 50px 0px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    #header{
+        margin-bottom: 20px;
+        padding: 5px 10px;
+        font-size: 25px;
+        color: $my-blue;
+        border-top: 3px solid $my-blue;
+        border-bottom: 3px solid $my-blue;
+    }
+
+    .detail{
+        width: 100%;
+        height: fit-content;
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .title{
+            padding: 2px 5px;
+            font-size: 18px;
+            font-weight: bold;
+            color: $my-blue;
+            border-right: 1px solid rgba($color: $my-black, $alpha: 0.6);
+            border-bottom: 1px solid rgba($color: $my-black, $alpha: 0.6);
+            outline: none;
+            box-shadow: 2px 2px 4px $my-blue;
+        }
+
+        .subtitle{
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        .about{
+            width: 100%;
+            height: fit-content;
+            padding: 5px 5px 5px 50px;
+
+            li{
+                width: 100%;
+                margin-top: 5px;
+                font-size: 16px;
+                color: $my-light-black;
+                text-align: justify;
+                
+                .wrap_img{
+                    width: 100%;
+                    height: fit-content;
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    img{
+                        width: 300px;
+                    }
+
+                    .note{
+                        text-align: center;
+                        color: $my-blue;
+                    }
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $my-blue;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 950px){
+    nav{
+        flex-direction: column;
+
+        .logo_burger{
+            padding: 0px 30px;
+            width: 100%;
+
+            .wrap_logo{
+                justify-content: flex-start;
+            }
+        }
+
+        .empty{
+            display: none;
+        }
+
+        .wrap_link{
+            padding: 10px 30px;
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            a{
+                margin: 5px 0px;
+            }
+        }
+    }
+}

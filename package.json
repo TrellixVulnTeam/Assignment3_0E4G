@@ -1,0 +1,15 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sasstocss": "node-sass sass/main.scss css/main.css && node-sass sass/font.scss css/font.css && node-sass sass/introduce.scss css/introduce.css && node-sass sass/team.scss css/team.css && node-sass sass/dedication.scss css/dedication.css -w"
+  },
+  "author": "Ly Thanh Tien - 2T2A",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

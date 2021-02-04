@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Latex_R;
+  src: url(../font/lmroman10-regular.otf); }
+
+@font-face {
+  font-family: Latex_I;
+  src: url(../font/lmroman10-italic.otf); }
+
+@font-face {
+  font-family: Latex_B;
+  src: url(../font/lmroman10-bold.otf); }

@@ -1,0 +1,152 @@
+@import url(../css/font.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Latex_R;
+  transition: 0.3s ease-in-out; }
+
+*::selection {
+  background-color: #faff00; }
+
+nav {
+  position: fixed;
+  padding: 10px 0px;
+  width: 100%;
+  height: fit-content;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  nav .logo_burger {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; }
+    nav .logo_burger .wrap_logo {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      nav .logo_burger .wrap_logo #logo {
+        width: 150px; }
+    nav .logo_burger .wrap_burger {
+      width: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      nav .logo_burger .wrap_burger #burger {
+        width: 25px;
+        fill: currentColor;
+        color: #0400ff;
+        cursor: pointer;
+        opacity: 0; }
+  nav .empty {
+    width: 10%; }
+  nav .wrap_link {
+    width: 65%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; }
+    nav .wrap_link a {
+      padding: 3px 9px;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #0400ff;
+      border-radius: 6px; }
+      nav .wrap_link a:nth-child(2) {
+        background-color: #8c00ff;
+        color: #f0f0f0; }
+        nav .wrap_link a:nth-child(2):hover {
+          background-color: #0400ff;
+          color: #f0f0f0; }
+      nav .wrap_link a:hover {
+        color: #f0f0f0;
+        background-color: #0400ff;
+        border-radius: 6px; }
+
+.content {
+  width: 70%;
+  height: fit-content;
+  padding: 100px 0px 50px 0px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; }
+  .content #header {
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    font-size: 25px;
+    color: #0400ff;
+    border-top: 3px solid #0400ff;
+    border-bottom: 3px solid #0400ff; }
+  .content .detail {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    .content .detail .title {
+      padding: 2px 5px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #0400ff;
+      border-right: 1px solid rgba(43, 43, 43, 0.6);
+      border-bottom: 1px solid rgba(43, 43, 43, 0.6);
+      outline: none;
+      box-shadow: 2px 2px 4px #0400ff; }
+    .content .detail .subtitle {
+      margin-top: 10px;
+      font-weight: bold; }
+    .content .detail .about {
+      width: 100%;
+      height: fit-content;
+      padding: 5px 5px 5px 50px; }
+      .content .detail .about li {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 16px;
+        color: #464646;
+        text-align: justify; }
+        .content .detail .about li .wrap_img {
+          width: 100%;
+          height: fit-content;
+          padding: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          .content .detail .about li .wrap_img img {
+            width: 300px; }
+          .content .detail .about li .wrap_img .note {
+            text-align: center;
+            color: #0400ff; }
+        .content .detail .about li a {
+          text-decoration: none;
+          color: #0400ff; }
+
+@media (max-width: 950px) {
+  nav {
+    flex-direction: column; }
+    nav .logo_burger {
+      padding: 0px 30px;
+      width: 100%; }
+      nav .logo_burger .wrap_logo {
+        justify-content: flex-start; }
+    nav .empty {
+      display: none; }
+    nav .wrap_link {
+      padding: 10px 30px;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start; }
+      nav .wrap_link a {
+        margin: 5px 0px; } }
