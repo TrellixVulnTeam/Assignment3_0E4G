@@ -84,7 +84,8 @@ nav {
     font-size: 25px;
     color: #0400ff;
     border-top: 3px solid #0400ff;
-    border-bottom: 3px solid #0400ff; }
+    border-bottom: 3px solid #0400ff;
+    text-align: center; }
   .content .detail {
     width: 100%;
     height: fit-content;
@@ -92,7 +93,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    background-color: chartreuse; }
     .content .detail .title {
       padding: 2px 5px;
       font-size: 18px;
