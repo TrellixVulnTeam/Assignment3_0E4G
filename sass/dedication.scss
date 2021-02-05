@@ -4,8 +4,8 @@ $my-white: rgb(240, 240, 240);
 $my-blue: rgb(4, 0, 255);
 $my-purple: rgb(140, 0, 255);
 $my-black: rgb(43, 43, 43);
-$my-light-black: rgb(100, 100, 100);
-$my-gold: rgb(250, 210, 0);
+$my-light-black: rgb(70, 70, 70);
+$my-gold: rgb(250, 255, 0);
 $empty-width: 10%;
 
 *{
@@ -17,7 +17,7 @@ $empty-width: 10%;
 }
 
 *::selection{
-    background-color: rgb(0, 255, 85);
+    background-color: $my-gold;
 }
 
 nav{
@@ -99,6 +99,86 @@ nav{
             }
         }
     }   
+}
+
+.content{
+    width: 70%;
+    height: fit-content;
+    padding: 100px 0px 50px 0px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    #header{
+        margin-bottom: 20px;
+        padding: 5px 10px;
+        font-size: 25px;
+        color: $my-blue;
+        border-top: 3px solid $my-blue;
+        border-bottom: 3px solid $my-blue;
+        text-align: center;
+    }
+
+    .detail{
+        width: 100%;
+        height: fit-content;
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .title{
+            padding: 2px 5px;
+            font-size: 18px;
+            font-weight: bold;
+            color: $my-blue;
+            border-right: 1px solid rgba($color: $my-black, $alpha: 0.6);
+            border-bottom: 1px solid rgba($color: $my-black, $alpha: 0.6);
+            outline: none;
+            box-shadow: 2px 2px 4px $my-blue;
+        }
+
+        .about{
+            width: 100%;
+            height: fit-content;
+            padding: 5px 5px 5px 50px;
+
+            li{
+                width: 100%;
+                margin-top: 5px;
+                font-size: 16px;
+                color: $my-light-black;
+                text-align: justify;
+                
+                .wrap_img{
+                    width: 100%;
+                    height: fit-content;
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    img{
+                        width: 300px;
+                    }
+
+                    .note{
+                        text-align: center;
+                        color: $my-blue;
+                    }
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $my-blue;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 950px){

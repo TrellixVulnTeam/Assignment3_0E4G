@@ -7,7 +7,7 @@
   transition: 0.3s ease-in-out; }
 
 *::selection {
-  background-color: #00ff55; }
+  background-color: #faff00; }
 
 nav {
   position: fixed;
@@ -68,6 +68,67 @@ nav {
         color: #f0f0f0;
         background-color: #0400ff;
         border-radius: 6px; }
+
+.content {
+  width: 70%;
+  height: fit-content;
+  padding: 100px 0px 50px 0px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; }
+  .content #header {
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    font-size: 25px;
+    color: #0400ff;
+    border-top: 3px solid #0400ff;
+    border-bottom: 3px solid #0400ff;
+    text-align: center; }
+  .content .detail {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    .content .detail .title {
+      padding: 2px 5px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #0400ff;
+      border-right: 1px solid rgba(43, 43, 43, 0.6);
+      border-bottom: 1px solid rgba(43, 43, 43, 0.6);
+      outline: none;
+      box-shadow: 2px 2px 4px #0400ff; }
+    .content .detail .about {
+      width: 100%;
+      height: fit-content;
+      padding: 5px 5px 5px 50px; }
+      .content .detail .about li {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 16px;
+        color: #464646;
+        text-align: justify; }
+        .content .detail .about li .wrap_img {
+          width: 100%;
+          height: fit-content;
+          padding: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          .content .detail .about li .wrap_img img {
+            width: 300px; }
+          .content .detail .about li .wrap_img .note {
+            text-align: center;
+            color: #0400ff; }
+        .content .detail .about li a {
+          text-decoration: none;
+          color: #0400ff; }
 
 @media (max-width: 950px) {
   nav {
