@@ -228,7 +228,7 @@ nav{
     }
 }
 
-@media (max-width: 952px){
+@media (min-width:500px) and (max-width: 952px){
     nav{
         flex-direction: column;
 
@@ -270,16 +270,73 @@ nav{
             width: 95%;
             justify-content: center;
             border: none;
+            border-bottom: 2px solid $my-blue;
         }
 
         .team{
             width: 100%;
             justify-content: center;
-            
-            p{
-                padding: 5px 120px;
-                border-top: 2px $my-blue solid;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    nav{
+        flex-direction: column;
+
+        .logo_burger{
+            padding: 0px 30px;
+            width: 100%;
+
+            .wrap_logo{
+                justify-content: flex-start;
             }
+        }
+
+        .empty{
+            display: none;
+        }
+
+        .wrap_link{
+            padding: 10px 30px;
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            a{
+                margin: 5px 0px;
+            }
+        }
+    }
+    .content{
+        width: 85%;
+    }
+
+    .footer{
+        flex-direction: column;
+        padding: 10px 0px;
+
+        .uni{
+            width: 95%;
+            justify-content: center;
+            border: none;
+            border-bottom: 2px solid $my-blue;
+            font-size: 12px;
+
+            img{
+                width: 60px;
+            }
+
+            p{
+                text-align: center;
+            }
+        }
+
+        .team{
+            width: 100%;
+            justify-content: center;
+            font-size: 14px;
         }
     }
 }

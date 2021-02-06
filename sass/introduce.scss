@@ -363,16 +363,12 @@ nav{
             width: 95%;
             justify-content: center;
             border: none;
+            border-bottom: 2px solid $my-blue;
         }
 
         .team{
             width: 100%;
             justify-content: center;
-            
-            p{
-                padding: 5px 120px;
-                border-top: 2px $my-blue solid;
-            }
         }
     }
 }
@@ -423,16 +419,22 @@ nav{
             width: 95%;
             justify-content: center;
             border: none;
+            border-bottom: 2px solid $my-blue;
+            font-size: 12px;
+
+            img{
+                width: 60px;
+            }
+
+            p{
+                text-align: center;
+            }
         }
 
         .team{
             width: 100%;
             justify-content: center;
-            
-            p{
-                padding: 5px 120px;
-                border-top: 2px $my-blue solid;
-            }
+            font-size: 14px;
         }
     }
 }
