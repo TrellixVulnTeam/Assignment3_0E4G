@@ -75,16 +75,14 @@ nav {
   height: fit-content;
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center; }
   .wrap_member .item {
     width: 660px;
     height: fit-content;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center; }
     .wrap_member .item .member {
