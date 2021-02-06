@@ -154,7 +154,7 @@ nav {
         color: #0400ff;
         background-color: #f0f0f0; }
 
-@media (max-width: 950px) {
+@media (max-width: 952px) {
   nav {
     flex-direction: column; }
     nav .logo_burger {

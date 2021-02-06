@@ -109,7 +109,7 @@ nav {
       left: 0;
       transform: translate(0, -95%); }
 
-@media (max-width: 950px) {
+@media (max-width: 952px) {
   nav {
     flex-direction: column; }
     nav .logo_burger {

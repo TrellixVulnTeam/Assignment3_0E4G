@@ -35,7 +35,7 @@ slider.addEventListener('transitionend', function() {
 
 window.addEventListener('load',()=>{
     let x = window.innerWidth;
-    if(x<=950){
+    if(x<953){
         carousel_width = 100;
         container.style.width = `${carousel_width}%`;
     }
@@ -47,7 +47,7 @@ window.addEventListener('load',()=>{
 
 window.addEventListener('resize',()=>{
     let x = window.innerWidth;
-    if(x<=950){
+    if(x<953){
         carousel_width = 100;
         container.style.width = `${carousel_width}%`;
     }

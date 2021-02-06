@@ -181,7 +181,54 @@ nav{
     }
 }
 
-@media (max-width: 950px){
+.footer{
+    padding: 10px 20px;
+    width: 100%;
+    height: fit-content;
+    background-color: $my-white;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+
+    .uni{
+        padding: 5px 0px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        // background-color: $my-gold;
+        border-right: 2px $my-blue solid;
+
+        img{
+            width: 50px;
+        }
+
+        .about_uni{
+            padding: 0px 10px;
+
+            p{
+                font-weight: bold;
+                color: $my-blue;
+            }
+        }
+    }
+
+    .team{
+        padding: 5px 20px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        p{
+            font-weight: bold;
+            color: $my-black;
+        }
+    }
+}
+
+@media (max-width: 952px){
     nav{
         flex-direction: column;
 
@@ -213,5 +260,26 @@ nav{
 
     .content{
         width: 85%;
+    }
+
+    .footer{
+        flex-direction: column;
+        padding: 10px 0px;
+
+        .uni{
+            width: 95%;
+            justify-content: center;
+            border: none;
+        }
+
+        .team{
+            width: 100%;
+            justify-content: center;
+            
+            p{
+                padding: 5px 120px;
+                border-top: 2px $my-blue solid;
+            }
+        }
     }
 }

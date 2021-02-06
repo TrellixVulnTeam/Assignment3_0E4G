@@ -3,7 +3,7 @@ var wrap_link = document.querySelector('.wrap_link');
 
 window.addEventListener('load',()=>{
     let x = window.innerWidth;
-    if(x<=950){
+    if(x<953){
         burger.style.opacity = '1';
         burger.style.display = 'inline-block';
         wrap_link.style.display = 'none';
@@ -17,7 +17,7 @@ window.addEventListener('load',()=>{
 
 window.addEventListener('resize',()=>{
     let x = window.innerWidth;
-    if(x<=950){
+    if(x<953){
         burger.style.opacity = '1';
         burger.style.display = 'inline-block';
         wrap_link.style.display = 'none';
