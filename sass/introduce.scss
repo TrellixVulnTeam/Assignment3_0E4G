@@ -10,6 +10,7 @@ $empty-width: 10%;
 
 :root{
     --item: 0;
+    --carousel_width: 75;
 }
 
 *{
@@ -108,7 +109,7 @@ nav{
 .content{
     width: 70%;
     height: fit-content;
-    padding: 100px 0px 50px 0px;
+    padding: 100px 0px 0px 0px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -133,6 +134,10 @@ nav{
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+
+        &:last-child{
+            padding: 0;
+        }
 
         .title{
             padding: 2px 5px;
@@ -195,16 +200,15 @@ nav{
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index: 10;
 
             .container {
-                width: 60%;
             
                 .carousel {
                     background: #fff;
                     border: 2px solid $my-blue;
                     border-radius: 5px;
                     width: 100%;
-                    height: 300px;
                     display: flex;
                     justify-content: flex-start;
                     overflow: hidden;
@@ -265,7 +269,7 @@ nav{
     }
 }
 
-@media (max-width: 950px){
+@media (min-width: 500px) and (max-width: 950px){
     nav{
         flex-direction: column;
 
@@ -292,6 +296,53 @@ nav{
             a{
                 margin: 5px 0px;
             }
+        }
+    }
+    .content{
+        width: 85%;
+    
+        .wrap_carousel .container .carousel .slider section p{
+            font-size: 20px;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    nav{
+        flex-direction: column;
+
+        .logo_burger{
+            padding: 0px 30px;
+            width: 100%;
+
+            .wrap_logo{
+                justify-content: flex-start;
+            }
+        }
+
+        .empty{
+            display: none;
+        }
+
+        .wrap_link{
+            padding: 10px 30px;
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            a{
+                margin: 5px 0px;
+            }
+        }
+    }
+    .content{
+        width: 85%;
+    
+        .wrap_carousel .container .carousel .slider section p{
+            font-size: 16px;
+            width: 100%;
         }
     }
 }

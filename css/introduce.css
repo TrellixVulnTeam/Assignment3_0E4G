@@ -1,6 +1,7 @@
 @import url(../css/font.css);
 :root {
-  --item: 0; }
+  --item: 0;
+  --carousel_width: 75; }
 
 * {
   margin: 0;
@@ -75,7 +76,7 @@ nav {
 .content {
   width: 70%;
   height: fit-content;
-  padding: 100px 0px 50px 0px;
+  padding: 100px 0px 0px 0px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -97,6 +98,8 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start; }
+    .content .detail:last-child {
+      padding: 0; }
     .content .detail .title {
       padding: 2px 5px;
       font-size: 18px;
@@ -141,60 +144,58 @@ nav {
       height: fit-content;
       display: flex;
       align-items: center;
-      justify-content: center; }
-      .content .detail .wrap_carousel .container {
-        width: 60%; }
-        .content .detail .wrap_carousel .container .carousel {
-          background: #fff;
-          border: 2px solid #0400ff;
-          border-radius: 5px;
-          width: 100%;
-          height: 300px;
+      justify-content: center;
+      z-index: 10; }
+      .content .detail .wrap_carousel .container .carousel {
+        background: #fff;
+        border: 2px solid #0400ff;
+        border-radius: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 4px 4px 10px rgba(4, 0, 255, 0.7); }
+        .content .detail .wrap_carousel .container .carousel .slider {
           display: flex;
-          justify-content: flex-start;
-          overflow: hidden;
-          position: relative;
-          box-shadow: 4px 4px 10px rgba(4, 0, 255, 0.7); }
-          .content .detail .wrap_carousel .container .carousel .slider {
-            display: flex;
-            height: 100%;
+          height: 100%;
+          flex-shrink: 0;
+          transition: all 0.5s; }
+          .content .detail .wrap_carousel .container .carousel .slider section {
+            position: relative;
             flex-shrink: 0;
-            transition: all 0.5s; }
-            .content .detail .wrap_carousel .container .carousel .slider section {
-              position: relative;
-              flex-shrink: 0;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              font-size: 20px;
-              background-color: transparent; }
-              .content .detail .wrap_carousel .container .carousel .slider section p {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 90%;
-                color: #f0f0f0;
-                text-align: center; }
-              .content .detail .wrap_carousel .container .carousel .slider section img {
-                width: 100%;
-                height: 100%;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                opacity: 0.7;
-                z-index: -2; }
-              .content .detail .wrap_carousel .container .carousel .slider section .wrap_image {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: black;
-                opacity: 0.5;
-                z-index: -1; }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            background-color: transparent; }
+            .content .detail .wrap_carousel .container .carousel .slider section p {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 90%;
+              color: #f0f0f0;
+              text-align: center; }
+            .content .detail .wrap_carousel .container .carousel .slider section img {
+              width: 100%;
+              height: 100%;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              opacity: 0.7;
+              z-index: -2; }
+            .content .detail .wrap_carousel .container .carousel .slider section .wrap_image {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: black;
+              opacity: 0.5;
+              z-index: -1; }
 
-@media (max-width: 950px) {
+@media (min-width: 500px) and (max-width: 950px) {
   nav {
     flex-direction: column; }
     nav .logo_burger {
@@ -211,4 +212,33 @@ nav {
       align-items: flex-start;
       justify-content: flex-start; }
       nav .wrap_link a {
-        margin: 5px 0px; } }
+        margin: 5px 0px; }
+  .content {
+    width: 85%; }
+    .content .wrap_carousel .container .carousel .slider section p {
+      font-size: 20px;
+      width: 100%; } }
+
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column; }
+    nav .logo_burger {
+      padding: 0px 30px;
+      width: 100%; }
+      nav .logo_burger .wrap_logo {
+        justify-content: flex-start; }
+    nav .empty {
+      display: none; }
+    nav .wrap_link {
+      padding: 10px 30px;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start; }
+      nav .wrap_link a {
+        margin: 5px 0px; }
+  .content {
+    width: 85%; }
+    .content .wrap_carousel .container .carousel .slider section p {
+      font-size: 16px;
+      width: 100%; } }

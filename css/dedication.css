@@ -147,4 +147,6 @@ nav {
       align-items: flex-start;
       justify-content: flex-start; }
       nav .wrap_link a {
-        margin: 5px 0px; } }
+        margin: 5px 0px; }
+  .content {
+    width: 85%; } }

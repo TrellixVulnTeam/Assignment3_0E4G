@@ -1,9 +1,11 @@
+const container = document.querySelector('.container');
 const carousel = document.querySelector('.carousel');
 const slider = document.querySelector('.slider');
 var item = getComputedStyle(document.documentElement).getPropertyValue('--item');
+var carousel_width = getComputedStyle(document.documentElement).getPropertyValue('--carousel_width');
+
 
 item = slider.childElementCount;
-console.log(item);
 slider.style.width = `${item*100}%`;
 for (var i=0;i<item;i++){
     slider.children[i].style.flexBasis = `${100/item}%`;
@@ -30,3 +32,27 @@ slider.addEventListener('transitionend', function() {
         slider.style.transition = 'all 0.5s';
     })
 }, false);
+
+window.addEventListener('load',()=>{
+    let x = window.innerWidth;
+    if(x<=950){
+        carousel_width = 100;
+        container.style.width = `${carousel_width}%`;
+    }
+    else{
+        carousel_width = 75;
+        container.style.width = `${carousel_width}%`;
+    }
+});
+
+window.addEventListener('resize',()=>{
+    let x = window.innerWidth;
+    if(x<=950){
+        carousel_width = 100;
+        container.style.width = `${carousel_width}%`;
+    }
+    else{
+        carousel_width = 75;
+        container.style.width = `${carousel_width}%`;
+    }
+});
