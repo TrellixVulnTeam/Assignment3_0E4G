@@ -76,7 +76,7 @@ nav {
 .content {
   width: 70%;
   height: fit-content;
-  padding: 100px 0px 0px 0px;
+  padding: 100px 0px 75px 0px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -145,7 +145,7 @@ nav {
       display: flex;
       align-items: center;
       justify-content: center;
-      z-index: 10; }
+      z-index: -10; }
       .content .detail .wrap_carousel .container .carousel {
         background: #fff;
         border: 2px solid #0400ff;
@@ -184,7 +184,7 @@ nav {
               background-position: center;
               background-size: cover;
               opacity: 0.7;
-              z-index: -2; }
+              z-index: -12; }
             .content .detail .wrap_carousel .container .carousel .slider section .wrap_image {
               position: absolute;
               top: 0;
@@ -193,7 +193,7 @@ nav {
               height: 100%;
               background-color: black;
               opacity: 0.5;
-              z-index: -1; }
+              z-index: -11; }
 
 .footer {
   padding: 10px 20px;

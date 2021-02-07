@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sasstocss": "node-sass sass/main.scss css/main.css && node-sass sass/font.scss css/font.css && node-sass sass/introduce.scss css/introduce.css && node-sass sass/team.scss css/team.css && node-sass sass/dedication.scss css/dedication.css"
+    "sasstocss": "node-sass sass/main.scss css/main.css && node-sass sass/font.scss css/font.css && node-sass sass/introduce.scss css/introduce.css -w && node-sass sass/team.scss css/team.css && node-sass sass/dedication.scss css/dedication.css"
   },
   "author": "Ly Thanh Tien - 2T2A",
   "license": "ISC",
